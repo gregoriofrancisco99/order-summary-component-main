@@ -7,6 +7,7 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
   <title>Frontend Mentor | Order summary card</title>
+  <link rel="stylesheet" href="./assets/style/style.css">
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
@@ -17,34 +18,38 @@
 <body>
 
   <div id="wrapper">
-    <header></header>
-    <main>
-      <section>
+    <div id="card">
+      <header>
+        <img src="./assets/images/illustration-hero.svg" alt="">
+      </header>
+      <main>
+        <section>
           <h1>Order Summary</h1>
-          
-          <p>You can now listen to millions of songs, audiobooks, and podcasts on any
-          device anywhere you like!</p>
-          
+      
+          <p class="lowOpacity">You can now listen to millions of songs, audiobooks, and podcasts on any
+            device anywhere you like!</p>
+      
           <div id="optArea">
             <div class="plan annual">
               <div id="imgIcon">
-                <img src="./images/icon-music.svg" alt="music icon">
+                <img src="./assets/images/icon-music.svg" alt="music icon">
               </div>
               <strong>
                 <h2>Annual Plan</h2>
-                <span>&dollar;59.99/year</span>
+                <span class="lowOpacity">&dollar;59.99/year</span>
               </strong>
-            
-              <a href="#" class="btn switchPlan">Change</a>
+      
+              <a href="#" class="link switchPlan">Change</a>
             </div>
-            
+      
             <div id="buttonArea">
               <button class="btn pay">Proceed to Payment</button>
-              <button class="btn cancel">Cancel Order</button>
+              <button class="btn cancel lowOpacity">Cancel Order</button>
             </div>
           </div>
-      </section>
-    </main>
+        </section>
+      </main>
+    </div>
   </div>
   
   <div class="attribution">
